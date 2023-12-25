@@ -1,0 +1,74 @@
+/* Các kiểu chung cho mọi kích thước màn hình */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradient-text {
+  background: linear-gradient(90deg, #808080, #000000, #Ffffff);
+  background-size: 400% 100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: colorTransition 8s infinite;
+}
+@keyframes colorTransition {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 0% 50%;
+  }
+  75% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gray-text {
+  color: #8b949e; 
+}
+
+.cc {
+  color: #fff; 
+}
+
+/* Các kiểu cho màn hình nhỏ hơn hoặc bằng 600px */
+@media screen and (max-width: 600px) {
+  .text-6xl {
+    font-size: 4xl;
+  }
+  .text-4xl {
+    font-size: 2xl;
+  }
+  .text-xl {
+    font-size: sm;
+  }
+
+  .word {
+    font-size: 4xl;
+  }
+  .cc {
+    font-size: 2xl;
+  }
+
+  .flex {
+    flex-direction: column;
+    align-items: center; /* Đặt nút ở giữa theo chiều dọc */
+  }
+
+  .space-x-4 {
+    margin-top: 1rem;
+  }
+
+  /* Đặt khoảng cách giữa các nút */
+  .button {
+    margin-bottom: 1rem;
+    width: 100%; /* Chiều rộng 100% */
+    max-width: 200px; /* Chiều rộng tối đa (tuỳ chọn) */
+  }
+}
