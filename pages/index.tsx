@@ -83,7 +83,7 @@ const Home: React.FC = () => {
         <div className="flex items-center justify-center space-x-4">
           {/* GitHub Button */}
 <Button
-  className="button bg-gray-200 text-gray-700 animated-element p-2 rounded-lg"
+  className="button bg-gray-200 text-gray-700 animated-element py-2 px-4 rounded-lg w-full"
   variant="outline"
   size="default"
   link="https://github.com/levinhkhangzz"
@@ -102,7 +102,7 @@ const Home: React.FC = () => {
 
 {/* Telegram Button */}
 <Button
-  className="button bg-gray-200 text-gray-700 animated-element p-2 rounded-lg"
+  className="button bg-gray-200 text-gray-700 animated-element py-2 px-4 rounded-lg w-full"
   variant="outline"
   size="default"
   link="https://t.me/A3d0tr1sX"
@@ -121,7 +121,7 @@ const Home: React.FC = () => {
 
 {/* Email Button */}
 <Button
-  className="button bg-gray-200 text-gray-700 animated-element p-2 rounded-lg"
+  className="button bg-gray-200 text-gray-700 animated-element py-2 px-4 rounded-lg w-full"
   variant="outline"
   size="default"
   link="mailto:levinhkhang631@gmail.com"
@@ -140,7 +140,7 @@ const Home: React.FC = () => {
 
 {/* Discord Button */}
 <Button
-  className="button bg-gray-200 text-gray-700 animated-element p-2 rounded-lg"
+  className="button bg-gray-200 text-gray-700 animated-element py-2 px-4 rounded-lg w-full"
   variant="outline"
   size="default"
   link="https://discord.com"
