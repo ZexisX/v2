@@ -37,7 +37,6 @@
   color: #fff; 
 }
 
-/* Các kiểu cho màn hình nhỏ hơn hoặc bằng 600px */
 @media screen and (max-width: 600px) {
   .text-6xl {
     font-size: 4xl;
@@ -58,17 +57,50 @@
 
   .flex {
     flex-direction: column;
-    align-items: center; /* Đặt nút ở giữa theo chiều dọc */
+    align-items: center;
   }
 
   .space-x-4 {
     margin-top: 1rem;
   }
 
-  /* Đặt khoảng cách giữa các nút */
   .button {
     margin-bottom: 1rem;
-    width: 100%; /* Chiều rộng 100% */
-    max-width: 200px; /* Chiều rộng tối đa (tuỳ chọn) */
+    width: 100%;
+    max-width: 200px;
+  }
+}
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.667s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
