@@ -67,8 +67,8 @@ const Home: React.FC = () => {
         <div className="flex flex-col items-center">
         <h1 className="text-6xl font-bold mb-2 text-center gradient-text">
   <span className="word">Hey </span>
-  <span className="cc">&#x1F44B; </span>
-  <span className="word">I&apos;m </span>
+  <span className="cc wave">&#x1F44B;  </span>
+  <span className="word"> I&apos;m </span>
   <span className="word">Aedotris</span>
 </h1>
         </div>
